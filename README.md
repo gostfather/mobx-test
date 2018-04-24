@@ -28,3 +28,15 @@ use:[
     ],
     "plugins": ["transform-decorators-legacy"]
 },
+
+就是在package.json里面直接添加这行代码。当然前提也是需要先安装依赖：yarn add babel-plugin-import --save-dev
+"babel": {
+    "presets": [
+      "react-app"
+    ],
+
+    "plugins": [
+        ["import", [{ "libraryName": "antd", "style": "css" }]],
+    ],
+
+  },
